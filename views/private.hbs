@@ -6,10 +6,11 @@
         </div>
         <ul>
             {{#each users}}   
-            <h1>{{book.title}}</h1>
-             <a href="priv/user/delete/{{user._id}}">
+            <h3>{{this.email}}</h3>
+             <a href="priv/user/delete/{{this._id}}">
             <button class='btn-delete'>I hate this employee, delete them!</button>
         </a> {{/each}}
         </ul>
+        <a href="/auth/sign-out">sign out!</a>
     </div>
 </div>

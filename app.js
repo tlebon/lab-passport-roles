@@ -82,5 +82,7 @@ app.use('/auth', auth);
 const priv = require('./routes/priv');
 app.use('/priv', priv);
 
+const protectedRoutes = require('./routes/protected')
+app.use('/protected', protectedRoutes)
 
 module.exports = app;

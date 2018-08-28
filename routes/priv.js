@@ -2,7 +2,7 @@ const express = require('express');
 const router  = express.Router();
 const ensureLogin = require('connect-ensure-login')
 router.use(ensureLogin.ensureLoggedIn('/auth/sign-in'))
-const User = require('../models/user')
+// const User = require('../models/user')
 
 /* GET home page */
 router.get('/', (req, res, next) => {
