@@ -39,5 +39,10 @@ router.post(
         failureFlash: true,
     })
 )
+router.get('/sign-out', (req, res) => {
+    req.logout()
+    res.redirect('/auth/sign-in')
+})
 
-module.exports = router
+
+module.exports = router;
