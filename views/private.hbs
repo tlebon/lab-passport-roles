@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card">
+        <div class="list-flex">
+            <h1>Look at all our employees</h1>
+            <a href="/create-employee"><button>Add an employee</button></a>
+        </div>
+        <ul>
+            {{#each users}}   
+            <h1>{{book.title}}</h1>
+             <a href="priv/user/delete/{{user._id}}">
+            <button class='btn-delete'>I hate this employee, delete them!</button>
+        </a> {{/each}}
+        </ul>
+    </div>
+</div>
