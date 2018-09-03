@@ -44,7 +44,7 @@ router.post('/users/add', (req, res, next) => {
       })
       .catch(err => {
           if (err.code === 11000) {
-              return res.render('sign-up', { error: 'user exists already' })
+              return res.redirect('auth/sign-up', { error: 'user exists already' })
           }
           console.error(err)
           res.send('something went wrong')
